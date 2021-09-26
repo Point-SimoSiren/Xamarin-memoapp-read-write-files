@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinTiedonTallennus.MainPage">
+
+    <StackLayout>
+
+        <Frame BackgroundColor="Black" Padding="16" CornerRadius="0">
+            <Label Text="Muistio" HorizontalTextAlignment="Center"
+                   TextColor="Orange" FontSize="24"/>
+        </Frame>
+
+
+        <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+
+       
+        <Entry x:Name="inputKentta" Placeholder="Kirjoita tähän..." />
+
+        <Button x:Name="tallennusNappi" Text="Tallenna" Clicked="tallennusNappi_Clicked" />
+
+        <Label x:Name="outputLabel" />
+
+        <Button x:Name="poistoNappi" Text="Tyhjennä" Clicked="poistoNappi_Clicked" />
+
+        <Label x:Name="vahvistusInfo" IsVisible="false" Text="Vahvista poistaminen ao. kytkimellä" />
+        <Switch x:Name="vahvistusKytkin" IsVisible="false" IsToggled="False" Toggled="vahvistusKytkin_Toggled" />
+
+    </StackLayout>
+
+        <Frame BackgroundColor="Black" Padding="16" CornerRadius="0">
+            <Label Text="made by me" HorizontalTextAlignment="Center" TextColor="Orange" FontSize="14"/>
+        </Frame>
+        
+    </StackLayout>
+
+</ContentPage>
